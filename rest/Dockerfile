@@ -7,11 +7,11 @@ ADD . /app
 WORKDIR /app
 RUN go mod download
 RUN go mod verify
-RUN go build -o backend-api /app/cmd
+RUN go build -o rest /app/cmd
 
 FROM alpine
 RUN mkdir -p /app
 WORKDIR /app
-COPY --from=build /app/backend-api .
+COPY --from=build /app/rest .
 EXPOSE 8080
-CMD ["./backend-api"]
+CMD ["./rest"]

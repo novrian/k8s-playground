@@ -1,4 +1,11 @@
 k8s Learning Tasks
 ==================
 
-- [ ] Create New Deployment
+## Sample App
+
+- [ ] REST API (Golang)
+- [ ] React (JS)
+
+## TODO
+
+- [ ] Create New Deployment of REST API
